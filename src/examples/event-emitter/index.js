@@ -25,6 +25,8 @@ const main = setInterval(() => {
   }
 }, 500);
 
+
+// input data to terminal listener, and console the value.
 const stdin = process.openStdin()
 
 stdin.addListener('data', function(value) {
