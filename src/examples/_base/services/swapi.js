@@ -8,7 +8,17 @@ module.exports = () => {
     return response
   }
 
+  const getPersonSummary = function (results = []) {
+    return results.map(function(item) {
+      return {
+        name: item.name,
+        height: item.height,
+      }
+    })
+  }
+
   return {
-    search
+    search,
+    getPersonSummary,
   }
 }
